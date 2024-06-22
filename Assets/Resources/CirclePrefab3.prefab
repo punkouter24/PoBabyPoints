@@ -291,6 +291,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   touchSounds:
-  - {fileID: 8300000, guid: ec42d9e1aefaa9e41a9d72a01c8c4c90, type: 3}
-  - {fileID: 8300000, guid: ec42d9e1aefaa9e41a9d72a01c8c4c90, type: 3}
-  - {fileID: 8300000, guid: ec42d9e1aefaa9e41a9d72a01c8c4c90, type: 3}
+  - {fileID: 8300000, guid: 22c69c56020fb314f8a7a43f6dd0f7a3, type: 3}
+  - {fileID: 8300000, guid: 11df4dfbfffaf0a40b94da3e1c9cb1f4, type: 3}
+  - {fileID: 8300000, guid: 738264f2d3fb0394dabe2231cd5a93d2, type: 3}
