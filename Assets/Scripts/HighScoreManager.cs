@@ -4,7 +4,7 @@ using UnityEngine;
 public class HighScoreManager : MonoBehaviour
 {
     private const string HighScoresKey = "HighScores";
-    private const int MaxHighScores = 10;
+    private const int MaxHighScores = 5;
 
     public List<int> highScores = new List<int>();
 
