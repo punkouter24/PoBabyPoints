@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     private int score = 0;
     private int level = 1;
     private bool gameStarted = false;
+    private bool isBabyMode = false; // Add this line
 
     public Text scoreText;
     public Text highScoresText;
@@ -20,6 +21,7 @@ public class GameManager : MonoBehaviour
     public Text gameOverText; // Add a Text element to display game over
     public Button playButton; // Use a single button for both play and restart
     public Button quitButton;
+    public Button babyButton; // Add this line
 
     private List<CircleMovement> circles;
     private HighScoreManager highScoreManager;
@@ -32,6 +34,7 @@ public class GameManager : MonoBehaviour
         gameOverText.gameObject.SetActive(false); // Hide game over text initially
         playButton.onClick.AddListener(StartOrRestartGame); // Add listener for play button
         quitButton.onClick.AddListener(QuitGame);
+        babyButton.onClick.AddListener(StartBabyMode); // Add this line
 
         highScoreManager = FindObjectOfType<HighScoreManager>();
         if (highScoreManager == null)
@@ -51,10 +54,13 @@ public class GameManager : MonoBehaviour
     {
         if (gameStarted && !gameEnded)
         {
-            gameTimer += Time.deltaTime;
-            if (gameTimer >= gameDuration)
+            if (!isBabyMode) // Add this condition
             {
-                EndGame();
+                gameTimer += Time.deltaTime;
+                if (gameTimer >= gameDuration)
+                {
+                    EndGame();
+                }
             }
         }
     }
@@ -73,7 +79,24 @@ public class GameManager : MonoBehaviour
 
         if (circlesTouched >= totalCircles)
         {
-            NextLevel();
+            if (!isBabyMode) // Add this condition
+            {
+                NextLevel();
+            }
+            else
+            {
+                // In baby mode, just keep spawning new circles
+                var newCircle = InstantiateCircle();
+                if (newCircle != null)
+                {
+                    circles.Add(newCircle);
+                    newCircle.ResetPositionAndSpeed(level);
+                }
+                else
+                {
+                    Debug.LogError("Failed to instantiate new circle. Check if the prefab is correctly set in the Resources folder.");
+                }
+            }
         }
     }
 
@@ -148,6 +171,7 @@ public class GameManager : MonoBehaviour
 
     private void StartOrRestartGame()
     {
+        isBabyMode = false; // Reset baby mode
         score = 0;
         circlesTouched = 0;
         level = 1;
@@ -158,6 +182,7 @@ public class GameManager : MonoBehaviour
         levelText.text = "Level: 1"; // Reset level text
         HideMainMenu();
         gameOverText.gameObject.SetActive(false); // Hide game over text
+        babyButton.gameObject.SetActive(false); // Hide baby mode button
 
         // Clear existing circles
         foreach (var circle in circles)
@@ -180,6 +205,48 @@ public class GameManager : MonoBehaviour
                 Debug.LogError("Failed to instantiate new circle. Check if the prefab is correctly set in the Resources folder.");
             }
         }
+    }
+
+    private void StartBabyMode()
+    {
+        isBabyMode = true;
+        score = 0;
+        circlesTouched = 0;
+        level = 1;
+        gameTimer = 0f;
+        gameEnded = false;
+        gameStarted = true;
+        scoreText.text = "Score: 0";
+        levelText.text = "Level: 1";
+        HideMainMenu();
+        gameOverText.gameObject.SetActive(false); // Hide game over text
+        babyButton.gameObject.SetActive(false); // Hide baby mode button
+
+        // Clear existing circles
+        foreach (var circle in circles)
+        {
+            Destroy(circle.gameObject);
+        }
+        circles.Clear();
+
+        // Spawn initial circles
+        for (int i = 0; i < totalCircles; i++)
+        {
+            var newCircle = InstantiateCircle();
+            if (newCircle != null)
+            {
+                circles.Add(newCircle);
+                newCircle.ResetPositionAndSpeed(level);
+            }
+            else
+            {
+                Debug.LogError("Failed to instantiate new circle. Check if the prefab is correctly set in the Resources folder.");
+            }
+        }
+
+        // Hide Score and Level text for Baby Mode
+        scoreText.enabled = false;
+        levelText.enabled = false;
     }
 
     private void QuitGame()
