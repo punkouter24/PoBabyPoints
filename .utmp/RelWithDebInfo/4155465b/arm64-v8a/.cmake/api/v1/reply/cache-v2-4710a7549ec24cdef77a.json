@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "android-23"
+			"value" : "android-31"
 		},
 		{
 			"name" : "ANDROID_STL",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/punko/Downloads/PoBabyPoints/.utmp/RelWithDebInfo/552i3w34/arm64-v8a"
+			"value" : "c:/Users/punko/Downloads/PoBabyPoints/.utmp/RelWithDebInfo/4155465b/arm64-v8a"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -467,7 +467,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Qunused-arguments -Wl,--no-undefined  -Wl,--gc-sections"
+			"value" : "-Wl,--build-id=sha1 -Wl,--fatal-warnings -Qunused-arguments -Wl,--no-undefined  -Wl,--gc-sections"
 		},
 		{
 			"name" : "CMAKE_EXE_LINKER_FLAGS_DEBUG",
@@ -567,7 +567,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "C:\\Users\\punko\\Downloads\\PoBabyPoints\\.utmp\\RelWithDebInfo\\552i3w34\\prefab\\arm64-v8a\\prefab"
+			"value" : "C:\\Users\\punko\\Downloads\\PoBabyPoints\\.utmp\\RelWithDebInfo\\4155465b\\prefab\\arm64-v8a\\prefab"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -663,7 +663,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "C:\\Users\\punko\\Downloads\\PoBabyPoints\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\build\\intermediates\\cxx\\RelWithDebInfo\\552i3w34\\obj\\arm64-v8a"
+			"value" : "C:\\Users\\punko\\Downloads\\PoBabyPoints\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\build\\intermediates\\cxx\\RelWithDebInfo\\4155465b\\obj\\arm64-v8a"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -707,7 +707,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Qunused-arguments -Wl,--no-undefined"
+			"value" : "-Wl,--build-id=sha1 -Wl,--fatal-warnings -Qunused-arguments -Wl,--no-undefined"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS_DEBUG",
@@ -935,7 +935,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "C:\\Users\\punko\\Downloads\\PoBabyPoints\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\build\\intermediates\\cxx\\RelWithDebInfo\\552i3w34\\obj\\arm64-v8a"
+			"value" : "C:\\Users\\punko\\Downloads\\PoBabyPoints\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\build\\intermediates\\cxx\\RelWithDebInfo\\4155465b\\obj\\arm64-v8a"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -951,7 +951,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Qunused-arguments -Wl,--no-undefined"
+			"value" : "-Wl,--build-id=sha1 -Wl,--fatal-warnings -Qunused-arguments -Wl,--no-undefined"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS_DEBUG",
@@ -1167,7 +1167,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "23"
+			"value" : "31"
 		},
 		{
 			"name" : "CMAKE_TOOLCHAIN_FILE",
@@ -1207,7 +1207,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/punko/Downloads/PoBabyPoints/.utmp/RelWithDebInfo/552i3w34/arm64-v8a"
+			"value" : "C:/Users/punko/Downloads/PoBabyPoints/.utmp/RelWithDebInfo/4155465b/arm64-v8a"
 		},
 		{
 			"name" : "Unity_IS_TOP_LEVEL",
@@ -1243,7 +1243,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Users/punko/Downloads/PoBabyPoints/.utmp/RelWithDebInfo/552i3w34/prefab/arm64-v8a/prefab/lib/aarch64-linux-android/cmake/game-activity"
+			"value" : "C:/Users/punko/Downloads/PoBabyPoints/.utmp/RelWithDebInfo/4155465b/prefab/arm64-v8a/prefab/lib/aarch64-linux-android/cmake/game-activity"
 		},
 		{
 			"name" : "game_BINARY_DIR",
@@ -1255,7 +1255,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/punko/Downloads/PoBabyPoints/.utmp/RelWithDebInfo/552i3w34/arm64-v8a/GameActivity"
+			"value" : "C:/Users/punko/Downloads/PoBabyPoints/.utmp/RelWithDebInfo/4155465b/arm64-v8a/GameActivity"
 		},
 		{
 			"name" : "game_IS_TOP_LEVEL",
@@ -1303,7 +1303,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Users/punko/Downloads/PoBabyPoints/.utmp/RelWithDebInfo/552i3w34/prefab/arm64-v8a/prefab/lib/aarch64-linux-android/cmake/games-frame-pacing"
+			"value" : "C:/Users/punko/Downloads/PoBabyPoints/.utmp/RelWithDebInfo/4155465b/prefab/arm64-v8a/prefab/lib/aarch64-linux-android/cmake/games-frame-pacing"
 		},
 		{
 			"name" : "swappywrapper_BINARY_DIR",
@@ -1315,7 +1315,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/punko/Downloads/PoBabyPoints/.utmp/RelWithDebInfo/552i3w34/arm64-v8a/FramePacing"
+			"value" : "C:/Users/punko/Downloads/PoBabyPoints/.utmp/RelWithDebInfo/4155465b/arm64-v8a/FramePacing"
 		},
 		{
 			"name" : "swappywrapper_IS_TOP_LEVEL",
